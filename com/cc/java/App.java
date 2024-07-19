@@ -6,6 +6,7 @@ public class App {
      Queen queen = new Queen();
      Worker worker = new Worker();
      Drone drone = new Drone();
+     KilledBee killedBee = new KilledBee();
         
         output(queen.doYourJob()); 
         output(queen.fly());
@@ -20,6 +21,10 @@ public class App {
         output(drone.doYourJob()); 
         output(drone.fly());
 
+        output("------------------");
+
+        output(killedBee.dead()); 
+    
 
     }
 

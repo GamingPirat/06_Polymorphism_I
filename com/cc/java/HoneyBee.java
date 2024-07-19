@@ -8,6 +8,8 @@ public class HoneyBee {
 
     public String fly(){
         return "I can fly!";
-
-}
+    }
+    public String dead(){
+        return "I'm dead!";
+    }
 }
