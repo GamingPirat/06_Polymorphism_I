@@ -8,28 +8,36 @@ public class App {
      Drone drone = new Drone();
      KilledBee killedBee = new KilledBee();
         
-        output(queen.doYourJob()); 
-        output(queen.fly());
+        pollObj(queen);
+        pollObj(worker);
+        pollObj(drone);
+        pollObj(killedBee);
 
-        output("------------------");
-        output(worker.doYourJob()); 
-
-        output(worker.fly());
-
-        output("------------------");
-
-        output(drone.doYourJob()); 
-        output(drone.fly());
-
-        output("------------------");
-
-        output(killedBee.dead()); 
-    
 
     }
 
-   
-   
+   private static void pollObj(Queen obj){
+    output(obj.doYourJob()); 
+    output(obj.fly());
+    output("------------------");
+    }
+    private static void pollObj(Worker obj){
+        output(obj.doYourJob()); 
+        output(obj.fly());
+        output("------------------");
+        }
+        private static void pollObj(Drone obj){
+            output(obj.doYourJob()); 
+            output(obj.fly());
+            output("------------------");
+            }
+            private static void pollObj(KilledBee obj){
+                output(obj.doYourJob()); 
+                output(obj.fly());
+                output("------------------");
+                }
+            
+    
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
