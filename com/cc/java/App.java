@@ -12,6 +12,11 @@ public class App {
         pollObj(worker);
         pollObj(drone);
         pollObj(killedBee);
+
+        HoneyBee bee = new HoneyBee();
+        pollObj(bee);
+
+
     }
 
     //  Polymorphie
