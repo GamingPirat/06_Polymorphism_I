@@ -13,6 +13,7 @@ public class App {
         pollObj(drone);
         pollObj(killedBee);
 
+        //  Das sollte eigentlich nicht gehen
         HoneyBee bee = new HoneyBee();
         pollObj(bee);
 
